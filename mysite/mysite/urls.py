@@ -21,5 +21,5 @@ urlpatterns = [
     path('add/', learn_views.add, name='add'),
     path('admin/', admin.site.urls),
     path('add/<int:a>/<int:b>/', learn_views.add2, name='add2'),
-    path('', learn_views.index, name='home'),
+    path('', learn_views.home, name='home'),
 ]

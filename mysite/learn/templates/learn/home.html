@@ -4,9 +4,12 @@
     <title>HAHAHAHAH</title>
 </head>
 <body>
- 
+	{{string}}
 <a href="/add/4/5/">计算 4+5</a>
 <a href="{% url 'add2' 4 5 %}">link</a>
-
+教程列表：
+{% for item in List %}
+{{item}}{% if not forloop.last %},{% endif %}
+{% endfor %}
 </body>
 </html>
